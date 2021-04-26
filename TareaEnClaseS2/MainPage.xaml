@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TareaEnClaseS2.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Frame BackgroundColor="Blue" CornerRadius="0">
+            <Label Text="Sistema de calificaciones" 
+           HorizontalOptions="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label x:Name="lblusuario" 
+           HorizontalOptions="Center"/>
+        <Entry x:Name="TxtDato1" Placeholder="Ingrese Nota de seguimiento1" Keyboard="Numeric"/>
+        <Entry x:Name="TxtDato2" Placeholder="Examen 1" Keyboard="Numeric"/>
+        <Entry x:Name="TxtDato3" Placeholder="Ingrese Nota de seguimiento2" Keyboard="Numeric"/>
+        <Entry x:Name="TxtDato4" Placeholder="Examen 2" Keyboard="Numeric"/>
+        <Entry x:Name="TxtTotal" Placeholder="Resultado total" IsReadOnly="True"/>
+        <Button  x:Name="btnTotal"
+                 Text="Calcular"
+                 Clicked="btnTotal_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>
